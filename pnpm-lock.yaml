@@ -3,6 +3,7 @@ dependencies:
   dotenv: 8.2.0
   express: 4.17.1
   handlebars: 4.7.6
+  lottie-vuejs: 0.4.0
   moment: 2.29.1
   mongodb: 3.6.3
   mongoose: 5.10.13_mongoose@5.10.13
@@ -308,6 +309,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
+  /axios/0.19.2:
+    dependencies:
+      follow-redirects: 1.5.10
+    deprecated: 'Critical security vulnerability fixed in v0.21.1. For more information, see https://github.com/axios/axios/pull/3410'
+    dev: false
+    resolution:
+      integrity: sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
   /balanced-match/1.0.0:
     dev: true
     resolution:
@@ -1142,6 +1150,14 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-aAWcW57uxVNrQZqFXjITpW3sIUQmHGG3qSb9mUah9MgMC4NeWhNOlNjXEYq3HjRAvL6arUviZGGJsBg6z0zsWA==
+  /follow-redirects/1.5.10:
+    dependencies:
+      debug: 3.1.0
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   /forever-agent/0.6.1:
     dev: false
     resolution:
@@ -1670,6 +1686,17 @@ packages:
     dev: false
     resolution:
       integrity: sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+  /lottie-vuejs/0.4.0:
+    dependencies:
+      axios: 0.19.2
+      lottie-web: 5.7.7
+    dev: false
+    resolution:
+      integrity: sha512-0gmUq/RGbu6EptrUEBKlr+o4YV1vuWs6wcjNcnPODz9Rrrgn664xY/QaGzJHCL6GU/Oab2oJ7MDxs4HqCY9ryA==
+  /lottie-web/5.7.7:
+    dev: false
+    resolution:
+      integrity: sha512-dAUrMX5BRxP7dr+qDWzablhGY6SqXztCS46sW11wjuzExQKZl5GLX2yMGGqg4AkdjgfjetndcU+VR1xoLhlkpA==
   /lowercase-keys/1.0.1:
     engines:
       node: '>=0.10.0'
@@ -3294,6 +3321,7 @@ specifiers:
   dotenv: ^8.2.0
   express: ^4.17.1
   handlebars: ^4.7.6
+  lottie-vuejs: ^0.4.0
   moment: ^2.29.1
   mongodb: ^3.6.3
   mongoose: ^5.10.13
